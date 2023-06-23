@@ -1,10 +1,10 @@
 #exercise 1 - making simple plots and visualising data using R Studio and ggplot2
 #example 1: analyse the number of cyanobacteria found in different Winogradsky columns (each set up with sediment from a different lake)
 
-#start by loading the necessary packages with the "library" command
+#start by loading the necessary packages with the "library" command: here we will be using ggplot2
 library(ggplot2)
 
-#load the data we are using for this excercise (you can download it from MyPlace if you are following it along; make sure to save it in your
+#load the data we are using for this excrcise (you can download it from MyPlace if you are following it along; make sure to save it in your
 #current working directory [you can check where your current working directory is, using getwd() if you are uncertain.])
 
 getwd()
@@ -62,9 +62,8 @@ print(p4)
 #are there any flaws in the experimental design? 
 #can you think of other ways to visualise and/or present these data? (does the audience you are presenting the data to matter?)
 
-#next, students to plot own datasets (need to generate more datasets for this....) 
+#next, students to plot own datasets using the same method (WinogradskyGreenSulfurCounts.csv, WinogradskyPurpleSulfurCounts.csv, WinogradskyClostridiaCounts.csv)
 
-
-
+#Leighton should we think about adding some statistics too?
 
 
