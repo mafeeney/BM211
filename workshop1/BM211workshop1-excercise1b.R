@@ -12,7 +12,7 @@ View(rhizo)
 
 #visualise the data
 
-# Define the desired order of the groups
+#Define the desired order of the groups (to appear on the x-axis)
 desired_order <- c("wt", "nodA", "nodA/pSC101", "nodA/pSC101-nodA")  
 
 # Reorder the 'name' variable as a factor with the desired order
