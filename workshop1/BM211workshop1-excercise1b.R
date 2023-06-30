@@ -4,6 +4,12 @@
 library(ggplot2)
 
 #Extra Practice Problem 1: the ability of rhizobia to form nodules on Phaseolus vulgaris roots
+#we have wild-type rhizobia, and a mutant (nodA-) strain
+#the mutant strain has been complemented (the nodA gene restored in trans)
+#so there are two additional strains (nodA/pSc101, which has the empty vector used for complementation; 
+#and nodA/pSC101-nodA, which has the nodA gene added back)
+#equal amounts of all 4 strains were inoculated on Phaseolus vulgaris roots, and the number of nodules per plant counted
+#these data are provided in the RhizobiaNodulation.csv file
 
 rhizo <- read.csv("RhizobiaNodulation.csv")
 

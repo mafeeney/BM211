@@ -51,7 +51,7 @@ print(p3)
 
 #plot four, a violinplot
 p4 <- ggplot(Cyanos, aes(x = column, y = cyanos)) +
-  geom_violin() +
+  geom_violin(aes(group = column)) +
   labs(x = "Column", y = "Number of cyanobacteria")
 
 print(p4)
