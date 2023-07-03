@@ -1,4 +1,8 @@
+# R project-associated files
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
+
+# macOS files
+.DS_Store
