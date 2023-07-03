@@ -102,6 +102,9 @@ plot2 <- ggplot(case1_data, aes(x = columnID, y = colony_count, fill = replicate
 # To view the plot, we can use the `print()` function:
 print(plot2)
 
+# NOTE: ggplot automatically provides a legend corresponding to the categories
+#       used to fill the bars
+
 # Q3) What does the graph show?
 # Q4) What information does the graph give you about the composition of the
 #     bacterial communities in each column?
@@ -126,18 +129,30 @@ print(plot3)
 # Q8) What information does the graph give you about the repeatability of colony
 #     counts for each column?
 
-# 3.4 Better than bar graphs: boxplots
+# 3.4 Better than bar graphs?: boxplots
 #
-# Bar graphs may be appropriate for simple data, but boxplots give us a more
-# flexible, nuanced view on our dataset.
+# Bar graphs may be appropriate for simple count data, but boxplots give us a
+# more flexible, nuanced view on our dataset.
 # As is usual with `ggplot`, changing the kind of graph we plot can be as easy
 # as modifying the _geometry_. Here, we use `geom_boxplot()` instead of 
 # `geom_bar()` but, otherwise, this is the same set of commands as example 3.1
 plot4 <- ggplot(case1_data, aes(x = columnID, y = colony_count)) +
   geom_boxplot() +
-  labs(title = "Total colony count in each column", x = "Column ID", y = "Colony count")
+  labs(title = "Boxplot of total colony count per column (three replicates)", x = "Column ID", y = "Colony count")
 # To view the plot, we can use the `print()` function:
 print(plot4)
+
+# We can stack layers of plots on top of each other using ggplot so, if we want
+# to overlay the actual colony counts for each column, we can "add" a 
+# `geom_point()` or `geom_jitter()` layer
+# NOTE: `geom_point` will give a single vertical line of datapoints;
+#       `geom_jitter` moves the points slightly to avoid too much overlap
+plot4a <- ggplot(case1_data, aes(x = columnID, y = colony_count)) +
+  geom_boxplot() +
+  geom_jitter() +
+  labs(title = "Boxplot of total colony count per column (three replicates)", x = "Column ID", y = "Colony count")
+# To view the plot, we can use the `print()` function:
+print(plot4a)
 
 # Q9) What does the graph show?
 # Q10) What information does the graph give you about the composition of the
@@ -145,47 +160,46 @@ print(plot4)
 # Q11) What information does the graph give you about the repeatability of colony
 #     counts for each column?
 
-plot5 <- ggplot(case1_data, aes(x = columnID, y = colony_count)) +
+# 3.5 Better than bar graphs?: boxplots
+#
+# If we want to visualise the distributions of kinds of bacteria next to each
+# other, we can change which column we plot on the X-axis, and which column
+# we use to decide the fill colour.
+# Specifically, we set the X-axis variable to `medium`, and fill to `colonyID`
+plot5 <- ggplot(case1_data, aes(x = medium, y = colony_count)) +
   geom_boxplot() +
   geom_jitter() +
   labs(title = "Total colony count in each column", x = "Column ID", y = "Colony count")
 # To view the plot, we can use the `print()` function:
 print(plot5)
 
-plot6 <- ggplot(case1_data, aes(x = columnID, y = colony_count,  fill = medium)) +
+# Using ggplot we can fill each boxplot with a different colour according to a
+# column category. This can make it easier for us to compare the counts of each
+# bacterium in each column.
+plot5a <- ggplot(case1_data, aes(x = medium, y = colony_count, fill = columnID)) +
   geom_boxplot() +
-  geom_point(position=position_dodge(1)) +
   labs(title = "Total colony count in each column", x = "Column ID", y = "Colony count")
 # To view the plot, we can use the `print()` function:
-print(plot6)
+print(plot5a)
 
+# Q12) What does the graph show?
+# Q13) What information does the graph give you about the composition of the
+#     bacterial communities in each column?
+# Q14) What information does the graph give you about the repeatability of colony
+#     counts for each column?
 
-p2 <- ggplot(case1_data, aes(x = columnID, y = colony_count)) +
-  geom_point() +
-  labs(x="Column", y="Number of cyanobacteria") 
-
-print(p2)
-
-#plot three, a boxplot
-
-p3 <- ggplot(Cyanos, aes(x = column, y = cyanos)) +
-  geom_boxplot(aes(group = column)) +
-  labs(x = "Column", y = "Number of cyanobacteria")
-
-print(p3)
-
-#plot four, a violinplot
-p4 <- ggplot(Cyanos, aes(x = column, y = cyanos)) +
-  geom_violin(aes(group = column)) +
-  labs(x = "Column", y = "Number of cyanobacteria")
-
-print(p4)
-
-#Discussion points for the class: 
-#which of the plots is "best"/most effective/most useful? 
-#how would you interpret these data? Which column do you think has the most cyanobacteria? 
-#are there any flaws in the experimental design? 
-#can you think of other ways to visualise and/or present these data? (does the audience you are presenting the data to matter?)
+## Discussion points for the class: 
+#
+# - Which of the plots do you think is "best"/most effective/most useful? 
+# - How would you interpret these data?
+# - Which column do you think has the most cyanobacteria? 
+# - Are there any flaws in the experimental design? 
+# - Can you think of other ways to visualise and/or present these data? (does 
+#   the audience you are presenting the data to matter?)
+# - Do the bacterial communities in the individual columns have the same
+#   proportions of bacteria?
+# - Are all of the column communities equally diverse? (HINT: what do you
+#   think we mean by "diverse" in this context?)
 
 #next, students to plot own datasets using the same method (WinogradskyGreenSulfurCounts.csv, WinogradskyPurpleSulfurCounts.csv, WinogradskyClostridiaCounts.csv)
 
