@@ -1,61 +1,61 @@
 "columnID","replicate","medium","colony_count"
-1,"rep_1","cyanobacteria",84
-1,"rep_1","clostridia",34
-1,"rep_1","green sulfur",33
-1,"rep_1","purple sulfur",36
-1,"rep_2","cyanobacteria",46
-1,"rep_2","clostridia",23
-1,"rep_2","green sulfur",26
-1,"rep_2","purple sulfur",30
-1,"rep_3","cyanobacteria",49
-1,"rep_3","clostridia",41
-1,"rep_3","green sulfur",44
-1,"rep_3","purple sulfur",50
-2,"rep_1","cyanobacteria",51
-2,"rep_1","clostridia",57
-2,"rep_1","green sulfur",34
-2,"rep_1","purple sulfur",18
-2,"rep_2","cyanobacteria",45
-2,"rep_2","clostridia",49
-2,"rep_2","green sulfur",13
-2,"rep_2","purple sulfur",23
-2,"rep_3","cyanobacteria",45
-2,"rep_3","clostridia",65
-2,"rep_3","green sulfur",30
-2,"rep_3","purple sulfur",11
-3,"rep_1","cyanobacteria",49
-3,"rep_1","clostridia",57
-3,"rep_1","green sulfur",35
-3,"rep_1","purple sulfur",7
-3,"rep_2","cyanobacteria",40
-3,"rep_2","clostridia",39
-3,"rep_2","green sulfur",52
-3,"rep_2","purple sulfur",12
-3,"rep_3","cyanobacteria",46
-3,"rep_3","clostridia",53
-3,"rep_3","green sulfur",45
-3,"rep_3","purple sulfur",8
-4,"rep_1","cyanobacteria",19
-4,"rep_1","clostridia",65
-4,"rep_1","green sulfur",50
-4,"rep_1","purple sulfur",26
-4,"rep_2","cyanobacteria",11
-4,"rep_2","clostridia",68
-4,"rep_2","green sulfur",44
-4,"rep_2","purple sulfur",46
-4,"rep_3","cyanobacteria",14
-4,"rep_3","clostridia",58
-4,"rep_3","green sulfur",31
-4,"rep_3","purple sulfur",56
-5,"rep_1","cyanobacteria",54
-5,"rep_1","clostridia",25
-5,"rep_1","green sulfur",26
-5,"rep_1","purple sulfur",10
-5,"rep_2","cyanobacteria",33
-5,"rep_2","clostridia",31
-5,"rep_2","green sulfur",48
-5,"rep_2","purple sulfur",13
-5,"rep_3","cyanobacteria",57
-5,"rep_3","clostridia",32
-5,"rep_3","green sulfur",64
-5,"rep_3","purple sulfur",3
+"col_1","rep_1","cyanobacteria",65
+"col_1","rep_1","clostridia",38
+"col_1","rep_1","green sulfur",12
+"col_1","rep_1","purple sulfur",9
+"col_1","rep_2","cyanobacteria",39
+"col_1","rep_2","clostridia",37
+"col_1","rep_2","green sulfur",13
+"col_1","rep_2","purple sulfur",8
+"col_1","rep_3","cyanobacteria",45
+"col_1","rep_3","clostridia",45
+"col_1","rep_3","green sulfur",17
+"col_1","rep_3","purple sulfur",12
+"col_2","rep_1","cyanobacteria",13
+"col_2","rep_1","clostridia",26
+"col_2","rep_1","green sulfur",60
+"col_2","rep_1","purple sulfur",43
+"col_2","rep_2","cyanobacteria",12
+"col_2","rep_2","clostridia",48
+"col_2","rep_2","green sulfur",59
+"col_2","rep_2","purple sulfur",56
+"col_2","rep_3","cyanobacteria",8
+"col_2","rep_3","clostridia",25
+"col_2","rep_3","green sulfur",75
+"col_2","rep_3","purple sulfur",33
+"col_3","rep_1","cyanobacteria",22
+"col_3","rep_1","clostridia",51
+"col_3","rep_1","green sulfur",37
+"col_3","rep_1","purple sulfur",23
+"col_3","rep_2","cyanobacteria",16
+"col_3","rep_2","clostridia",34
+"col_3","rep_2","green sulfur",29
+"col_3","rep_2","purple sulfur",17
+"col_3","rep_3","cyanobacteria",19
+"col_3","rep_3","clostridia",42
+"col_3","rep_3","green sulfur",38
+"col_3","rep_3","purple sulfur",15
+"col_4","rep_1","cyanobacteria",10
+"col_4","rep_1","clostridia",16
+"col_4","rep_1","green sulfur",35
+"col_4","rep_1","purple sulfur",31
+"col_4","rep_2","cyanobacteria",8
+"col_4","rep_2","clostridia",11
+"col_4","rep_2","green sulfur",34
+"col_4","rep_2","purple sulfur",35
+"col_4","rep_3","cyanobacteria",10
+"col_4","rep_3","clostridia",15
+"col_4","rep_3","green sulfur",35
+"col_4","rep_3","purple sulfur",34
+"col_5","rep_1","cyanobacteria",14
+"col_5","rep_1","clostridia",31
+"col_5","rep_1","green sulfur",36
+"col_5","rep_1","purple sulfur",22
+"col_5","rep_2","cyanobacteria",12
+"col_5","rep_2","clostridia",34
+"col_5","rep_2","green sulfur",21
+"col_5","rep_2","purple sulfur",38
+"col_5","rep_3","cyanobacteria",32
+"col_5","rep_3","clostridia",25
+"col_5","rep_3","green sulfur",25
+"col_5","rep_3","purple sulfur",30

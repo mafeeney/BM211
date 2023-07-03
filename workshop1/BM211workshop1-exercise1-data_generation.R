@@ -34,7 +34,7 @@ media = c("cyanobacteria", "clostridia", "green sulfur", "purple sulfur")  # nam
 # Create the dataframe of random data
 # - each student ID is repeated once for each combination of medium and
 #   replicate
-columnID = rep(seq(n_students), each=length(media) * n_replicates)  
+columnID = paste0("col_", as.character(rep(seq(n_students), each=length(media) * n_replicates)))
 
 # - each medium, and each mean value is repeated `n_replicates` times for
 #   each student. This would benefit from a bit of extra commenting, so...
